@@ -1,2 +1,2 @@
-myfunc = () ->
- console.log 'hi'
+class MyClass
+	something: 1
