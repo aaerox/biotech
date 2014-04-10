@@ -1,0 +1,31 @@
+{
+  "name": "cycle",
+  "version": "0.0.0",
+  "description": "Sequence front-end build automation.",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aaerox/cycle.git"
+  },
+  "author": "Jon Daly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaerox/cycle/issues"
+  },
+  "homepage": "https://github.com/aaerox/cycle",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-coffee": "^0.10.1",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-sass": "^0.12.1",
+    "load-grunt-tasks": "^0.4.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-contrib-cssmin": "^0.9.0"
+  }
+}
