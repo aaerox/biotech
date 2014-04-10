@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 body {
   background: red; }
   body.something {
     background: green; }
+=======
+.wrapper {
+  padding: 40px; }
+>>>>>>> origin/master
