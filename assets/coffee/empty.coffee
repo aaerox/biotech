@@ -1,0 +1,2 @@
+myfunc = () ->
+ console.log 'hi'
