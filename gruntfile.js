@@ -4,13 +4,22 @@ module.exports = function(grunt) {
   grunt.initConfig({
     config: grunt.file.readJSON('../assets/gruntconfig.json'),
     pkg: grunt.file.readJSON('./package.json'),
+    buildTasks: []
   });
+
+  // Load all grunt tasks
+  require('load-grunt-tasks')(grunt);
+
+  // Load our utility tasks
+  grunt.loadTasks('tasks/util');
 
   // Load per-task config from separate files.
   grunt.loadTasks('tasks');
-  require('load-grunt-tasks')(grunt);
+  
+  // Register our build and watch tasks
+  grunt.registerTask('build', grunt.config('buildTasks'));
+  grunt.registerTask('default', ['build', 'watch']);
 
-  grunt.registerTask('default', ['task-styles', 'task-coffee', 'watch']);
   grunt.registerTask('config', function () { 
     console.log(grunt.config.get()); 
   });
